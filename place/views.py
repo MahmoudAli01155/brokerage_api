@@ -25,6 +25,16 @@ def addUser(request):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+class TopFivePlaceView(APIView):
+    def get(self, request):
+        places = Places.objects.order_by('-id')[:5]
+        serializer = PlacesSerializer(places, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+        # try:
+        #
+        # except Exception as e:
+        #     return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 
 @api_view(['GET'])
 def getAllUsersSerializer(request):
@@ -152,18 +162,24 @@ class TopFiveChaletView(APIView):
             return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
+# SEARCH
+#####################################################################################################################
 
-
-
-class TopFivePlaceView(APIView):
+class SearchVillaView(APIView):
     def get(self, request):
-        places = Places.objects.order_by('-id')[:5]
-        serializer = PlacesSerializer(places, many=True)
+        query = request.query_params.get('query', None)
+        if not query:
+            return Response({"error": "Query parameter is required"}, status=status.HTTP_400_BAD_REQUEST)
+        villas = Villa.objects.filter( models.Q(description__icontains=query) |
+                                       models.Q(idPlace__city__icontains=query) |
+                                       models.Q(idPlace__governorate__icontains=query)
+                                       ).select_related('idPlace')
+        serializer = VillaSerializer(villas, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
-        # try:
-        #
-        # except Exception as e:
-        #     return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+
+
 
 
 
