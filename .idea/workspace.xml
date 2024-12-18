@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d6142eb-fa0a-4e5a-a896-38d79f4aa1e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brokerage/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/brokerage/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brokerage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/brokerage/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/place/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/place/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/place/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="1d6142eb-fa0a-4e5a-a896-38d79f4aa1e6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +102,7 @@
       <workItem from="1734302655383" duration="598000" />
       <workItem from="1734427614984" duration="6673000" />
       <workItem from="1734435543053" duration="5254000" />
-      <workItem from="1734515919309" duration="7437000" />
+      <workItem from="1734515919309" duration="7737000" />
     </task>
     <servers />
   </component>
