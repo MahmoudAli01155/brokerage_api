@@ -117,6 +117,7 @@ class EmptyLand(models.Model):
 class Offices(models.Model):
     idPlace = models.ForeignKey(Places ,on_delete=models.CASCADE)
     officeId = models.AutoField(primary_key=True)
+    propertyNumber = models.CharField(max_length=50, null=True)
     area = models.IntegerField()
     roomNumber = models.CharField(max_length=50, null=True)
     description = models.CharField(max_length=500, null=True)
@@ -138,6 +139,7 @@ class Offices(models.Model):
 class Shops(models.Model):
     idPlace = models.ForeignKey(Places, on_delete=models.CASCADE)
     shopsId = models.AutoField(primary_key=True)
+    propertyNumber = models.CharField(max_length=50, null=True)
     area = models.IntegerField()
     description = models.CharField(max_length=500, null=True)
     Governorate = models.CharField(max_length=50)

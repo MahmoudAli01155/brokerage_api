@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1d6142eb-fa0a-4e5a-a896-38d79f4aa1e6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brokerage/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/brokerage/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brokerage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/brokerage/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/place/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/place/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/place/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +45,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mahmo/PycharmProjects/fund_transfer&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -99,6 +105,12 @@
       <workItem from="1733918680929" duration="8444000" />
       <workItem from="1733949561612" duration="14563000" />
       <workItem from="1733996097656" duration="10081000" />
+      <workItem from="1734264427952" duration="2930000" />
+      <workItem from="1734300853069" duration="589000" />
+      <workItem from="1734302655383" duration="598000" />
+      <workItem from="1734427614984" duration="6673000" />
+      <workItem from="1734435543053" duration="5254000" />
+      <workItem from="1734515919309" duration="7437000" />
     </task>
     <servers />
   </component>
