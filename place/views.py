@@ -193,6 +193,7 @@ class CreateApartmentsView(APIView):
         try:
             if Users.objects.filter(idUser=request.data['idUser']).exists():
                 createPlace = Places.objects.create(idUser=request.data['idUser'])
+                UsersSerializer.Meta.validate_idUsersSerializer
                 if createPlace:
                     Apartments.objects.create(
                         idPlace=createPlace,
@@ -532,5 +533,73 @@ class UpdateApartmentView(APIView):
 
 
 
+#==================   Here Is Functions  (Show Id)  ==============================
 
+@api_view(['GET'])
+def Get_Villa_By_Id(request,pk):
+    try:
+        data = Villa.objects.get(idVilla=pk)
+        if request.method == "GET":
+            serilaizer = VillaSerializer(data)
+            return Response(serilaizer.data)
+    except:
+        return Response({"message":"This property does not exist"})
+
+
+@api_view(['Get'])
+def Get_Apartment_By_Id(request,pk):
+    try:
+        data = Apartments.objects.get(idApartments=pk)
+        if request.method == "GET":
+            serilaizer = ApartmentsSerializer(data)
+            return Response(serilaizer.data)
+    except:
+        return Response({"message":"This property does not exist"})
+
+@api_view(['Get'])
+def Get_EmptyLand_By_Id(request,pk):
+    try:
+        data = EmptyLand.objects.get(idEmptyLand=pk)
+        if request.method == "GET":
+            serilaizer = EmptyLandSerializer(data)
+            return Response(serilaizer.data)
+    except:
+        return Response({"message":"This property does not exist"})
+
+@api_view(['Get'])
+def Get_Office_By_Id(request,pk):
+    try:
+
+        data = Offices.objects.get(idEmptyLand=pk)
+        if request.method == "GET":
+            serilaizer = OfficesSerializer(data)
+            return Response(serilaizer.data)
+    except:
+        return Response({"message":"This property does not exist"})
+
+
+@api_view(['Get'])
+def Get_Shop_By_Id(request,pk):
+    try:
+        data = Shops.objects.get(idEmptyLand=pk)
+        if request.method == "GET":
+            serilaizer = ShopsSerializer(data)
+            return Response(serilaizer.data)
+    except:
+        return Response({"message":"This property does not exist"})
+    
+
+@api_view(['Get'])
+def Get_Chalet_By_Id(request,pk):
+    try:
+
+        data = Chalet.objects.get(idEmptyLand=pk)
+        if request.method == "GET":
+            serilaizer = ChaletSerializer(data)
+            return Response(serilaizer.data)
+    except:
+        return Response({"message":"This property does not exist"})
+    
+
+#========================================================
 
